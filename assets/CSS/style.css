@@ -225,5 +225,8 @@ img {
   color: var(--first-color-alt);
 }
 /* Show menu*/
+.show-menu{
+  bottom: 0;
+}
 
 /*Active link*/
