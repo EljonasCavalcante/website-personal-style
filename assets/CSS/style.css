@@ -229,4 +229,25 @@ img {
   bottom: 0;
 }
 
+/*=======HOME=====================*/
+.home__container {
+  gap: 1rem;
+}
+
+.home__content {
+  grid-template-columns: .5fr 3fr;
+}
+
+
+/*=======ABOUT=====================*/
+
+/*=======SKILLS=====================*/
+
+/*=======QUALIFICATION=====================*/
+
+/*=======SERVICES=====================*/
+
+/*=======HOME=====================*/
+
+
 /*Active link*/
