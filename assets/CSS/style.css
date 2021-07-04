@@ -4,10 +4,11 @@
 /*====== VARIABLES CSS ==========*/
 :root {
   --header-height: 3rem;
-  /*======colors=================*/
-  /*change favorite color*/
-  --hue-color: 250; /*purple 250 - greem 142-bleu 230- Pink 240*/
-  /* HSL color mode*/
+  /* COLORS */
+  /* Change favorite color */
+  --hue-color: 250;
+
+  /* HSL color mode */
   --first-color: hsl(var(--hue-color), 69%, 61%);
   --first-color-second: hsl(var(--hue-color), 69%, 61%);
   --first-color-alt: hsl(var(--hue-color), 57%, 53%);
@@ -17,44 +18,43 @@
   --text-color-light: hsl(var(--hue-color), 8%, 65%);
   --input-color: hsl(var(--hue-color), 70%, 92%);
   --body-color: hsl(var(--hue-color), 60%, 99%);
-  --container-color: #fff;
+  --containter-color: #fff;
 
+  /*========== font and typograhy ============*/
+  --body-font: 'Poppins', sans-serif;
 
-/*========== font and typograhy ============*/
---body-font: 'Poppins', sans-serif;
+  /* . 5rem =8px, 1rem = 16px, 1.5rem=24px*/
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
 
-/* . 5rem =8px, 1rem = 16px, 1.5rem=24px*/
---big-font-size: 2rem;
---h1-font-size: 1.5rem;
---h2-font-size: 1.25rem;
---h3-font-size: 1.125rem;
---normal-font-size: 0.938rem;
---small-font-size: 0.813rem;
---smaller-font-size: 0.75rem;
+  /*==========font weighy============*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
 
-/*==========font weighy============*/
---font-medium: 500;
---font-semi-bold: 600;
-
-/*=========Margenes Bottom========*/
-/* .25rem=4px, .5rem=8px, .75rem=12px...*/
---mb-0-25: 0.25rem;
---mb-0-5: 0.25rem;
---mb-0-75: 0.75rem;
---mb-1: 1rem;
---mb-1-5: 1.5rem;
---mb-2: 2rem;
---mb-2-5: 2.5rem;
---mb-3: 3rem;
-/*=========z index ========*/
---z-tooltip: 10;
---Z-fixed: 100;
---Z-modal: 1000;
+  /*=========Margenes Bottom========*/
+  /* .25rem=4px, .5rem=8px, .75rem=12px...*/
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.25rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+  /*=========z index ========*/
+  --z-tooltip: 10;
+  --Z-fixed: 100;
+  --Z-modal: 1000;
 }
 
 /* font size for lorge devices */
 @media screen and (min-width: 968px) {
-  :root{
+  :root {
     --big-font-size: 3rem;
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;
@@ -62,7 +62,7 @@
     --normal-font-size: 1rem;
     --small-font-size: 0.875rem;
     --smaller-font-size: 0.813rem;
-  }    
+  }
 }
 
 /*======== Variables Dark theme===========*/
@@ -70,7 +70,7 @@
 /*======== Button Dark/light theme========*/
 
 /*======== BASE===========================*/
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   border: 0;
@@ -81,14 +81,17 @@ html {
 }
 
 body {
-  margin:  0 0 var(--header-height) 0;
+  margin: 0 0 var(--header-height) 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
 }
 
-h1,h2,h3,h4 {
+h1,
+h2,
+h3,
+h4 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
 }
@@ -136,8 +139,91 @@ img {
   display: grid;
   gap: 1.5rem;
 }
-/*======== NAV ============================*/
 
+.header {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: var(--Z-fixed);
+  background-color: var(--body-color);
+}
+/*======== NAV ============================*/
+.nav {
+  max-width: 968px;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo,
+.nav__toggle {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+.nav__logo:hover {
+  color: var(--first-color);
+}
+
+.nav__toggle {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.nav__toggle:hover {
+  color: var(--first-color);
+}
+
+@media screen and (max-width: 757px) {
+  .nav__menu {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--body-color);
+    padding: 2rem 1.5rem 4rem;
+    box-shadow: 0 -1px 4px rgba(0,0,0,.15);
+    border-radius: 1.5rem 1.5rem 0 0;
+    transition: 0.3s;
+  }
+}
+
+.nav__list {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.nav__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+.nav__link:hover {
+  color: var(--first-color);
+}
+
+.nav__icon {
+  font-size: 1.2rem;
+}
+
+.nav__close {
+  position: absolute;
+  right: 1.3rem;
+  bottom: .5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--first-color);
+}
+
+.nav__close:hover{
+  color: var(--first-color-alt);
+}
 /* Show menu*/
 
 /*Active link*/
