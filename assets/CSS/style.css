@@ -6,7 +6,7 @@
   --header-height: 3rem;
   /* COLORS */
   /* Change favorite color */
-  --hue-color: 250;
+  --hue-color: 230;
 
   /* HSL color mode */
   --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -113,18 +113,18 @@ img {
   padding: 2rem 0 4rem;
 }
 
-.section_title {
+.section__title {
   font-size: var(--h1-font-size);
 }
 
-.section_subtitle {
+.section__subtitle {
   display: block;
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-3);
 }
 
-.section_title,
-.section_subtitle {
+.section__title,
+.section__subtitle {
   text-align: center;
 }
 
@@ -285,7 +285,7 @@ img {
  }
 
  .home__scroll {
-   /*display: none;*/
+   display: none;
  }
 
  .home__scroll-button{
@@ -334,6 +334,11 @@ img {
   font-size: 1.25rem;
   margin-left: var(--mb-0-5);
   transition: 0.3s;
+}
+
+.button--flex {
+  display: inline-flex;
+  align-items: center;
 }
 
 /*=======SKILLS=====================*/
