@@ -405,6 +405,23 @@ img {
   font-size: var(--h3-font-size);
 }
 
+.skils__subtitle{
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.skills__arrow{
+  margin-left: auto;
+  transition: 0.4s;
+}
+
+.skills__titles{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--mb-0-5);
+}
+
+
 
 
 /*=======QUALIFICATION=====================*/
