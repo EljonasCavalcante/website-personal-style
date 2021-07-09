@@ -54,6 +54,4 @@ function toggleSkills(){
   }
 }
 
-    
-
 /*=======QUALIFICATION TABS========= */
