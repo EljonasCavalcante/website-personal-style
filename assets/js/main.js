@@ -33,8 +33,27 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click',linkAction))
 
 /*=======SCROLL SECTION ACTIVE LINK========= */
+const sections = document.querySelectorAll('section[id]')
 
+function scrollActive() {
+const scroll = window.pageYOffset
+}
 
 /*=======ACCORDION SKILL========= */
+const skillsContent = document.getElementsByClassName('skill__content'),
+      skilsHeader = document.querySelectorAll('skills__header')
+
+function toggleSkills(){
+  let itemClass = this.parentNode.getElementsByClassName
+
+  for(i = 0; i < skillsContent.length; i++){
+    skillsContent[i].className = 'skills__content skills__close'
+  }
+  if(itemClass == 'skills__content skills__close'){
+    this.parentNode.className = 'skills__content skills__open'
+  }
+}
+
+    
 
 /*=======QUALIFICATION TABS========= */
