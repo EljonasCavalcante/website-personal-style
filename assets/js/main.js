@@ -56,3 +56,23 @@ function toggleSkills() {
 skillsHeader.forEach((el) => {
     el.addEventListener('click', toggleSkills)
 })
+
+/*qualification tabs 
+const tabs = document.querySelectorAll('[data-torget]'),
+      tabsContent = document.querySelectorAll('[data-content]')
+
+tabsContent.forEach(tab =>{
+    tab.addEventListener('click', () =>{
+      const target = document.querySelector(tab.dataset.target)
+      
+      tabContent.forEach(tabContent =>{
+          tabContent.classList.remove('qualification__ative')
+      })
+      target.classList.add('qualification__active')
+
+      tabs.forEach(tab =>{
+          tab.classList.remove('qualification__active')
+      })
+      tab.classList.add('qualification_active')
+    })
+})*/
