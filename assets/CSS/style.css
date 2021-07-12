@@ -6,7 +6,7 @@
   --header-height: 3rem;
   /* COLORS */
   /* Change favorite color */
-  --hue-color: 140;
+  --hue-color: 360;
 
   /* HSL color mode */
   --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -334,6 +334,15 @@ img {
   font-size: 1.25rem;
   margin-left: var(--mb-0-5);
   transition: 0.3s;
+}
+
+.button--white{
+  background-color: #fff;
+  color: var(--first-color);
+}
+
+.button--white:hover{
+  background-color: rgb(20, 18, 18);
 }
 
 .button--flex {
@@ -747,8 +756,35 @@ img {
   outline: none;
 }
 
+/*===============PROJECT IN MIND ================*/
+.project{
+  text-align: center;
+}
 
+.project__bg{
+  background-color: var(--first-color-second);
+  padding-top: 3rem;
+}
 
+.project__title{
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--mb-0-75);
+}
+
+.project__description{
+  margin-bottom: var(--mb-1-5);
+  
+}
+
+.project__title,
+.project__description{
+  color: #fff;
+}
+
+.project__img{
+  width: 25rem;
+  justify-self: center;
+}
 
 /*=======HOME=====================*/
 
