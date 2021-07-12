@@ -74,6 +74,7 @@
   box-sizing: border-box;
   padding: 0;
   border: 0;
+  margin: 0;
 }
 
 html {
@@ -792,10 +793,7 @@ img {
   display: flex;
 }
 
-.testimonial__profile{
-  display: flex;
-  align-items: flex-end;
-}
+
 
 .testimonial__data{
   justify-content: space-between;
@@ -812,7 +810,7 @@ img {
 .testimonial__name{
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
-  position: absolute;
+  
 }
 
 .testimonial__client{
