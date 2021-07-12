@@ -135,3 +135,6 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
         }
     }
   });
+
+  /*======Footer================= */
+  
