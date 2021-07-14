@@ -1,3 +1,4 @@
+
 # Personal website - Eljonas Cavalcante
 
 This is a solution for [Personal website](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29). The  site challenge is to build an interactive presentation that helps improve my coding skills when building realistic projects.
@@ -31,9 +32,8 @@ Users should be able to:
 
 
 ### Screenshot
-
 ![](./screenshot.jpg)
-
+![preview](https://user-images.githubusercontent.com/85083611/125692890-f8f0fbc6-72fa-4419-a70f-2f8eb1753e35.png)
 
 
 ### Links
