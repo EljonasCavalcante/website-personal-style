@@ -1,6 +1,7 @@
-# Personal website
+# Personal website - Eljonas Cavalcante
 
-This is a solution for the [personal one](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29). he challenges of the personal website is to build an interactive presentation that helps improve my coding skills when building realistic projects. 
+This is a solution for [Personal website](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29). The  site challenge is to build an interactive presentation that helps improve my coding skills when building realistic projects.
+
 
 
 ## Table of contents
