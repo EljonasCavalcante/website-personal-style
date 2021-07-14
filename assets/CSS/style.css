@@ -187,13 +187,11 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-
 .nav__logo,
 .nav__toggle {
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
-
 .nav__logo:hover {
   color: var(--first-color);
 }
@@ -298,6 +296,7 @@ img {
 .home__blob {
   width: 200px;
   fill: var(--first-color);
+
 }
 
 .home__blob-img {
