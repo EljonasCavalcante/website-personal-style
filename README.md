@@ -1,7 +1,7 @@
 
 # Personal website - Eljonas Cavalcante
 
-This is a solution for [Personal website](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29). The  site challenge is to build an interactive presentation that helps improve my coding skills when building realistic projects.
+This is a solution for [Personal website](https://eljonascavalcante.github.io/website-personal-style/). The  site challenge is to build an interactive presentation that helps improve my coding skills when building realistic projects.
 
 
 
@@ -71,7 +71,7 @@ CSS allows you to animate HTML elements without using JavaScript or Flash!
 
 ## Author
 
-- Website - [Eljonas Cavalcante](https://www.your-site.com)
+- Website - [Eljonas Cavalcante](https://eljonascavalcante.github.io/website-personal-style/)
 - Instagram - [@eljonascavalcante](https://www.instagram.com/eljonascavalcante/)
 
 
