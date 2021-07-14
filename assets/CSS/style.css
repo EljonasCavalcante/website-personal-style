@@ -138,6 +138,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 /*======== REUSABLE CSS CLASSES===========*/
 .section {
   padding: 2rem 0 4rem;
@@ -286,7 +287,7 @@ img {
 }
 /*padronizar os icones*/
 .home__social-icon {
-  font-size: 1.25rem;
+  font-size: 2.25rem;
   color: var(--first-color);
 }
 /*efeito de acender um cor mais clara no icone*/
@@ -405,7 +406,7 @@ img {
 }
 /*=======ABOUT=====================*/
 .about__img{
-  width: 200px;
+  width: 25rem;
   border-radius: 0.5rem;
   justify-self: center;
   align-self: center;
@@ -655,7 +656,7 @@ img {
 
 .services__icon{
   display: block;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: var(--first-color);
   margin-bottom: var(--mb-1);
 }
@@ -821,7 +822,7 @@ img {
 }
 
 .project__img{
-  width: 25rem;
+  width: 30rem;
   justify-self: center;
 }
 
@@ -1226,3 +1227,42 @@ img {
 }
 
 /*=========For large devices======*/
+@media screen and (min-width: 1024px){
+  .header,
+  .main,
+  .footer__container{
+      padding: 0;
+  }
+
+  .home__blod{
+    width: 320px;
+  }
+  .home__social{
+    transform: translateX(-6rem);
+  }
+  .services__container{
+    grid-template-columns: repeat(3, 238px);
+  }
+
+  .portfolio__content{
+    column-gap: 5rem;
+  }
+  .swiper-portfolio-icon{
+    font-size: 3.5rem;
+  }
+  .swiper-button-prev{
+    left: -3.5rem;
+  }
+  .swiper-button-next{
+    right: -3.5rem;
+  }
+  .swiper-container-horizontal > .swiper-pagination-bullets{
+    bottom: -4.5rem;
+  }
+  .contact__form{
+    width: 460px;
+  }
+  .contact__inputs{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
