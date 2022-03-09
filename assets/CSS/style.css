@@ -522,19 +522,19 @@ img {
 }
 
 .skills__js{
-  width: 40%;
+  width: 45%;
 }
 
 .skills__react{
-  width: 10%;
+  width: 30%;
 }
 
 .skills__reactnative{
-  width: 10%;
+  width: 30%;
 }
 
 .skills__figma{
-  width: 25%;
+  width: 70%;
 }
 
 .skills__photoshop{
@@ -542,11 +542,27 @@ img {
 }
 
 .skills__kotlin{
-  width: 10%;
+  width: 40%;
+}
+
+.skills__nodejs{
+  width: 85%;
+}
+
+.skills__android{
+  width: 50%;
+}
+
+.skills__flutter{
+  width: 5%;
 }
 
 .skills__sparkar{
   width: 25%;
+}
+
+.skills__mysql{
+  width: 60%;
 }
 
 .skills__close .skills__list{
