@@ -295,12 +295,13 @@ img {
 /*troca a cor da img svg com a cor padrao*/
 .home__blob {
   width: 200px;
+  border-radius:55% 48% 53% 51% / 43% 48% 51% 56% ;
   fill: var(--first-color);
 
 }
 
 .home__blob-img {
-  width: 170px;
+  width: 170px;    
 }
 /*deixa o texto abaixo do perfil */
  .home__data {
@@ -319,8 +320,7 @@ img {
  }
 
  .home__description {
-   margin-bottom: var(--mb-2);
-   
+   margin-bottom: var(--mb-2);   
  }
 
  .home__scroll {
@@ -562,7 +562,7 @@ img {
 }
 
 .skills__mysql{
-  width: 60%;
+  width: 89%;
 }
 
 .skills__close .skills__list{
@@ -1092,9 +1092,10 @@ img {
   .home__data{
     grid-column: initial;
   }
-  .home__img{
-    order: 1;
+  .home__img{  
+    order: 0;
     justify-self: center;
+    
   }
   .about__container,
   .skills__container,
